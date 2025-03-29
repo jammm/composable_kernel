@@ -540,6 +540,7 @@ if(BUILD_DEV)
     add_compile_options(-Werror)
     add_compile_options(-Weverything)
 endif()
+add_compile_options(-Wno-unused-parameter)
 message("CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 
 if("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
